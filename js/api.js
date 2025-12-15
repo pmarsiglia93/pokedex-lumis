@@ -13,7 +13,7 @@ export async function loadAllPokemonIndex() {
 
 export async function loadPokemonTypes() {
   const data = await fetchJSON(`${API}/type?limit=1000`);
-  return data.results; // [{ name, url }]
+  return data.results;
 }
 
 export async function getIndexByType(type) {

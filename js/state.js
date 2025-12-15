@@ -23,7 +23,7 @@ export const TYPE_PT = {
 
 export const state = {
   page: 1,
-  pageSize: 18, // 3 linhas x 6 cards (desktop do Figma)
+  pageSize: 18,
   search: "",
   type: "",
   allIndex: [],
