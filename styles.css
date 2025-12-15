@@ -63,7 +63,6 @@ body{
   padding: 0 32px 32px;
 }
 
-/* Search centralizada como no Figma */
 .controls{
   padding-top: 34px; /* espaço do header -> search */
   padding-bottom: 24px;
@@ -164,7 +163,6 @@ body{
   padding-bottom: 8px;
 }
 
-/* Paginação estilo Figma */
 .pagination{
   display:flex;
   align-items:center;
@@ -207,7 +205,6 @@ body{
   place-items:center;
 }
 
-/* Responsivo (sem frame mobile, mas fica bom) */
 @media (max-width: 1320px){
   .grid{ 
     grid-template-columns: repeat(4, var(--card-w)); 
@@ -231,3 +228,14 @@ body{
         font-size: 12px;
     }
 }
+
+.siteFooter{
+  max-width: var(--max);
+  margin: 18px auto 0;
+  padding: 16px 32px 28px;
+  border-top: 1px solid var(--line);
+  color: #6b7280;
+  font-size: 13px;
+  text-align: center;
+}
+
