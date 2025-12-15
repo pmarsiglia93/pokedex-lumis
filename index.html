@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokedex - Lumis</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <img class="brand__logo" src="./assets/pokedex-logo.png" alt="Pokédex" />
+
+      <nav class="nav">
+        <a class="nav__link nav__link--pill" href="#">Home</a>
+        <a class="nav__link" href="#">Pokédex</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="controls">
+      <div class="search">
+        <input
+          id="searchInput"
+          class="search__input"
+          type="text"
+          placeholder="Faça uma busca pelo nome do pokémon"
+          autocomplete="off"
+        />
+        <img class="search__icon" src="./assets/lupa.png" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="filtersRow">
+        <select id="typeSelect" class="filtersRow__select">
+          <option value="">Todos os tipos</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="status" class="status" hidden></div>
+
+    <section>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <footer class="pagination">
+      <button id="prevBtn" class="pagination__btn" type="button">← Anterior</button>
+      <div id="pages" class="pagination__pages" aria-label="Paginação"></div>
+      <button id="nextBtn" class="pagination__btn" type="button">Próximo →</button>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
