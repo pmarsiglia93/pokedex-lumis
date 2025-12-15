@@ -239,3 +239,20 @@ body{
   text-align: center;
 }
 
+.pagination__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination__icon{
+  width: 9px; 
+  height: 9px;
+  object-fit: contain;
+}
+
+.pagination__btn:disabled .pagination__icon{
+  opacity: .35;
+}
+
+

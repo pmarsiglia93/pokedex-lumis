@@ -45,10 +45,19 @@
     </section>
 
     <footer class="pagination">
-      <button id="prevBtn" class="pagination__btn" type="button">← Anterior</button>
+      <button id="prevBtn" class="pagination__btn" type="button" aria-label="Página anterior">
+        <img class="pagination__icon" src="./assets/arrow-left.png" alt="" aria-hidden="true" />
+        <span>Anterior</span>
+      </button>
+
       <div id="pages" class="pagination__pages" aria-label="Paginação"></div>
-      <button id="nextBtn" class="pagination__btn" type="button">Próximo →</button>
+
+      <button id="nextBtn" class="pagination__btn" type="button" aria-label="Próxima página">
+        <span>Próximo</span>
+        <img class="pagination__icon" src="./assets/arrow-right.png" alt="" aria-hidden="true" />
+      </button>
     </footer>
+
     <footer class="siteFooter">
       Desenvolvido por <strong>Paulo Francisco Marsiglia</strong>
     </footer>
