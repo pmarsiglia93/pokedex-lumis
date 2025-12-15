@@ -24,3 +24,5 @@ npx serve .
 
 ## Observações
 - Foi usado cache em memória para evitar múltiplas requisições repetidas aos mesmos Pokémon.
+
+- url do projeto: https://pokedex-lumis-gules.vercel.app/
